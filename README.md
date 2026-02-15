@@ -2,6 +2,10 @@
 
 See how climate affects your area: air quality, temperature anomalies, 7-day forecast, and AI-powered climate briefs.
 
+## Live Demo
+
+[**Try TerraWatch →**](https://terrawatch.vercel.app/)
+
 ## What’s in this project
 
 | Part | What it does |
