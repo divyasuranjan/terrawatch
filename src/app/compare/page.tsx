@@ -14,8 +14,8 @@ export default function ComparePage() {
   const [suggestions2, setSuggestions2] = useState<Array<{ display_name: string; lat: string; lon: string }>>([]);
   const [selected1, setSelected1] = useState<{ name: string; lat: string; lon: string } | null>(null);
   const [selected2, setSelected2] = useState<{ name: string; lat: string; lon: string } | null>(null);
-  const [data1, setData1] = useState<{ weather?: { main?: { temp: number }; main?: { humidity: number } }; airQuality?: { aqi?: number } } | null>(null);
-  const [data2, setData2] = useState<{ weather?: { main?: { temp: number }; main?: { humidity: number } }; airQuality?: { aqi?: number } } | null>(null);
+  const [data1, setData1] = useState<{ weather?: { main?: { temp?: number; humidity?: number } }; airQuality?: { aqi?: number } } | null>(null);
+  const [data2, setData2] = useState<{ weather?: { main?: { temp?: number; humidity?: number } }; airQuality?: { aqi?: number } } | null>(null);
 
   const fetchSuggestions = async (q: string, setter: (s: Array<{ display_name: string; lat: string; lon: string }>) => void) => {
     if (q.length < 2) { setter([]); return; }
