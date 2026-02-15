@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0a0e27;
+  --emerald: #10b981;
+  --amber: #f59e0b;
+  --danger: #ef4444;
+}
+
+body {
+  background: var(--navy);
+  color: #e5e7eb;
+}
+
+/* Dot grid background */
+.dot-grid {
+  background-image: radial-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism card */
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
